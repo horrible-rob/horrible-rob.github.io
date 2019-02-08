@@ -1,0 +1,111 @@
+body {
+  /*thx @mwichary*/
+  font-family: -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: #363B3E;
+  background-color: #F9FBFC;
+}
+
+a {
+  color: #0382DC;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+a:hover {
+  text-decoration: underline;
+  color: #0065A0;
+}
+
+#gradient {
+  background: #0373E5;
+  /* Rectangle: */
+  background-image: linear-gradient(45deg, #0063ff 0%, #3AC2F1 50%, #09DB8C 100%);
+  position: relative;
+}
+
+#content {
+  color: black;
+  border: 1px solid #CFD6D8;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  margin: auto;
+  margin-top: 60px;
+  z-index: 4;
+  max-width: 440px;
+  box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.06);
+}
+
+#shadeit {
+  filter: blur(8px);
+  mix-blend-mode: overlay;
+  opacity: 0.3
+}
+
+#shadeit path {
+  fill: black;
+}
+
+#gradient h1 {
+  font-size: 48px;
+  font-weight: 300;
+  background: url(images/icon.png) no-repeat;
+  background-size: 57px 50px;
+  padding-left: 78px;
+  display: inline-block;
+  color: white;
+  text-shadow: 0px 1px 2px rgba(0,0,0,0.14), 0px 1px 9px rgba(0,0,0,.1);
+}
+
+@media (min--moz-device-pixel-ratio:1.5), (min-device-pixel-ratio:1.5), (min-resolution:1.5dppx), (min-resolution:138dpi), all and (-webkit-min-device-pixel-ratio:1.5) {
+  #gradient h1 {
+    background: url(images/icon@2x.png) no-repeat;
+    background-size: 57px 50px;
+  }
+}
+
+#content h2 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5em;
+  max-width: 540px;
+  padding: 30px 40px;
+  margin: 0 auto;
+}
+
+
+.header-spacer {
+  padding: 20px;
+}
+
+@media screen and (max-width:502px) {
+  #content {
+    margin: 60px 20px 0px 20px;
+  }
+}
+
+@media screen and (max-width:479px) {
+  #gradient h1 {
+    padding-left: 0px;
+    padding-top: 50px;
+    background: url(images/icon.png) no-repeat top center;
+    background-size: 50px 44px;
+    font-size: 42px;
+    margin-top: 40px;
+  }
+
+
+  #content {
+    margin: 30px 20px;
+  }
+
+  #content h2 {
+    padding: 32px 40px;
+    text-align: center !important; 
+  }
+
+}
